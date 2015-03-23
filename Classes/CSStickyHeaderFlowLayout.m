@@ -98,6 +98,7 @@ NSString *const CSStickyHeaderParallaxHeader = @"CSStickyHeaderParallexHeader";
                                    respondsToSelector:@selector(numberOfSectionsInCollectionView:)]
                                 ? [self.collectionView.dataSource numberOfSectionsInCollectionView:self.collectionView]
                                 : 1;
+    #pragma unused(numberOfSections)
 
     // Create the attributes for the Parallex header
     if (visibleParallexHeader && ! CGSizeEqualToSize(CGSizeZero, self.parallaxHeaderReferenceSize)) {
